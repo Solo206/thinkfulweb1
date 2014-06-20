@@ -6,8 +6,8 @@
 <body>
 	<article>
 		<h1>Is HTML considered a programming language?</h1>
-		<p>No, HTML is a markup language.  The "M" stands for "Markup". Generally a programming language allows you to describe some sort of process of doing something, whereas HTMl is a way of adding context and structure to text.</p>
-		<p>One of the commenters in Stack Overflow explained that HTML5+CSS3 could be considered Turing complete.  Turing complete is according to wikipedia: a system of data-manipulation rules that can be used to simulate any single-taped Turing machine.  In other words its a system that will find an answer or solve computational problems.</p>
+		<p>No, HTML is a markup language.  The "M" stands for <b>"Markup"</b>. Generally a programming language allows you to describe some sort of process of doing something, whereas HTMl is a way of adding context and structure to text.</p>
+		<p>One of the commenters in Stack Overflow explained that HTML5+CSS3 could be considered Turing complete.  <dfn>Turing complete</dfn> is according to wikipedia: a system of data-manipulation rules that can be used to simulate any single-taped Turing machine.  In other words its a system that will find an answer or solve computational problems.</p>
 		<p>The prevailing thought however still remains that HTML by itself is not a programming language.  A blog from Syracuse University succintly  posits that HTML "is not an example of an executable script".  It points out that HTML is used for structural purposes on a web page, not functional ones".  Programming languages must have functional purposes, such as evaluative, computational or logical nature.</p>
 		<img src="http://solo206.github.io/thinkfulweb1/Notprogram.png">
 		
@@ -56,7 +56,57 @@
 	</article>
 	<hr>
 	<article>
-		<h1></h1>
+		<h1>What's the difference between a block element(for instance, <code>&lt;div&gt;</code>) and an inline element (for instance <code>&lt;span&gt;</code></div></h1>
+		<p>Block element is element that takes up the entire width of the screen and does not allow for other elements to reside next to it.  Inline elements allow other elements to be adjacent to it on a horizontal line.  <b>HTML Dogs</b> website states that a <b>span</b> is an inline element that resides in a paragraph, whereas <b>div</b>  is a block-line which takes up the entire line with line breaks before and after it.  Inline elements allow text and other elements to wrap around it.  It can be useful for specifying the alignment of that element according to surrounding elements.</p>  
+		<p>Common examples of block elements include (from <cite>webdesignfromscratch.com</cite>:
+		<dl>
+			<dt>div</dt>
+				<dd>Your general-purpose box</dd>
+			<dt>h1-h6</dt>
+				<dd>All headings</dd>
+			<dt>p</dt>
+				<dd>paragraph</dd>
+			<dt>ul,ol,dl</dt>
+				<dd>Lists(unordered,ordered and definition</dd>
+			<dt>li,dt,dd</dt>
+				<dd>Lists(unordered, ordered and definition</dd>
+			<dt>table</dt>
+				<dd>Tables</dd>
+			<dt>blockquote</dt>
+				<dd>Like an indented paragraph, meant for quoting passages of text</dd>
+			<dt>pre</dt>
+				<dd>Indicates a block of preformatted code</dd>
+			<dt>form</dt>
+				<dd>An input form</dd>
+
+		</dl>
+		Common examples of inline elements  include (from <cite>webdesignfromscratch.com</cite>):
+		<dl>
+			<dt>span</dt>
+				<dd>Your all purpose inline element</dd>
+			<dt>a</dt>
+				<dd>Anchor used for links and also to mark specific targets on a page for direct linking</dd>
+			<dt>strong</dt>
+				<dd>Used to make your content strong displayed as bold browsers, but also carries additional meaning of importance emphasis</dd>
+			<dt>em</dt>
+				<dd>Displayed as italic text, but used for stress emphasis terms</dd>
+			<dt>bold</dt>
+				<dd>Used for keywords, product names, or typographic presentation</dd>
+			<dt>i</dt>
+				<dd>Used for offset prose, technical term, thought, ship name, alternate voice or mood</dd>
+			<dt>img</dt>
+				<dd>Image, such as photos, pics, graphs, etc. </dd>
+			<dt>br</dt>
+				<dd>Line-break is an odd case as its an inline element that forces a new line.  How as the text carries on the next line, its not a block level element</dd>
+			<dt>input</dt>
+				<dd>Form input fields like text forms</dd>
+			<dt>abbr</dt>
+				<dd>Indicates an abbrevation</dd>
+			<dt>acronym</dt>
+				<dd>Working much like the abbreviation, but used for this like TLA</dd>
+		</dl>
+		</p>
+
 	</article>
 </body>
 </html>
