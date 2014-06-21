@@ -1,196 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Practice HTML</title>
+	<title>Styles Conference</title>
 </head>
 <body>
-<header></header>
-<section id="top">
-	<h1>Learning the basics</h1>
-	<p>
-		<ul>
-			<li>html</li>
-			<li>head</li>
-			<li>title</li>
-			<li>body</li>
-			<li>p</li>
-			<li>div</li>
-			<li>span</li>
-			<li>h1-h6</li>
-			<li>img</li>
-			<li>ul</li>
-			<li>ol</li>
-			<li>li</li>
-			<li>table</li>
-			<li>tr</li>
-			<li>td</li>
-			<li>th</li>
-			<li>strong</li>
-			<li>em</li>
-		</ul>
-	</p>
-</section>
-<hr>
-<section>
-	<h1><em>D-A-N-G-E-R<em> <br> Web developers at <strong>WORK!</strong></h1>
-	<h1>Now, let's make a table!</h1>
-	<p>
-		<table>
-			<th>This is heading title of table</th>
-			<tr>
-				<td>first column of first row</td>
-				<td>second column of first row</td>
-			</tr>
-			<tr>
-				<td>first column of second row</td>
-				<td>second column of second row</td>
-			</tr>
-		</table>
-
-	</p>
-</section>
-<hr>
-<section>
-	<h1>Nesting list in a list</h1>
-	<p>List of things to do today
-		<ol>
-			<li>Grocery shopping
-				<ul>
-					<li>Buy eggs</li>
-					<li>Buy milk</li>
-					<li>Buy bread</li>
-				</ul>
-			</li>
-			<li>Gardening
-				<ul>
-					<li>Mowing lawn</li>
-					<li>Weeding</li>
-					<li>Planting flowers</li>
-				</ul>
-			</li>
-			<li>Cleaning room
-				<ul>
-					<li>Vacuuming room</li>
-					<li>Organizing books</li>
-					<li>Stacking papers</li>
-				</ul>
-			</li>
-		</ol>
-	</p>
-</section>
-<hr>
-<section>
-	<h1>How to style with CSS</h1>
-	<p>
-		There are 3 ways to style:
-		<ul>
-			<li>external</li>
-			<li>internal</li>
-			<li>inline</li>
-		</ul>
-		<dl>
-			<dt>external styling</dt>
-				<dd>External styling is ideal when the style is applied to many pages.  With an external style sheet, one file controls the entire look of the website. 
-					<samp>
-						&lt;link rel="stylesheet" href="stylesheet.css"&gt;
-					</samp>
-				</dd>
-			<dt>internal styling</dt>
-				<dd>Internal styling is used when a single document has a unique style. Style is defined in the head section of an HTML page
-				<samp>&lt;style&gt; div{color:white;}&lt;/style&gt;</samp></dd>
-			<dt>inline stying</dt>
-				<dd>Inline styling loses many of the advantages of external style sheet, by mixing content with presentation.  To use inline styles, add the style attribute to the relavant tag.  Style attribute can contain any CSS property.  <samp>
-					&lt;p style="color:white;margin-left:20px"&gt;This is a style.&lt;/p&gt;
-				</samp></dd>
-		</dl>
-	</p>
-	<p>Styling occurs in the following precendence order from lowest to highest:
-	<ol>
-		<li>Browser default</li>
-		<li>External styling</li>
-		<li>Internal styling</li>
-		<li>Inline styling</li>
-	</ol></p>
-	<p style="font-size:medium;font-family:sans-serif;color:white;">Wow this font is in sans-serif and is white with medium sizing.</p>
-</section>
-<section>
-	<p><h1>Block-level elements</h1>
-		<ul>
-			<li>If no width is set, it will expand naturally to fill its parent container</li>
-			<li>Can have margins and or padding</li>
-			<li>If no height is set will expand naturally to fit its child elements</li>
-			<li>By default will be placed below previous elements in the markup assuming no floats or positioning on surrounding elements</li>
-		</ul>
-		<h1>Inline elements</h1>
-		<ul><li>
-			Flows along with text content
-			</li>
-			<li>Will not clear previous content to drop to the next line like block elements</li>
-			<li>Is subject to white space settings in CSS</li>
-		</ul>
-	</p>
-</section>
-<section>
-	<h1>Block vs Inline</h1>
-	<p>
-		Block elements begin on a new line stacking one on top of the other and occupy any available width.  Block-level elements may be nested inside one another and may wrap inline-level elements.  We'll most commonly see block level elements used for larger pieces of content such as paragraphs.
-	</p>
-	<p>Iinline do not begin on a new line.  They fall into normal flow of the document, lining up one after the other, and only maintain the width of their of their content.  Inline level elements may be nested inside one another; however they cannot wrap block-level elements.  We'll usually see inline level elements with smaller pieces of content.</p>
-</section>
-<section>
-	<h1>Headings</h1>
-	<p>
-		Headings are block-level elements.  Headings are also used to establish hierarchy, they are key identifiers used by users.  Search engines also use them to index and determine content of page.  Headings hsould be used in order that relavant to content of page.  Subsequent headings within h1 sphere should use h2, h3, h4, h5, and h6.  Headings have semantic value and should not be used to increase size of fonts.  		
-	</p>
-	<h1>Paragraphs</h1>
-	<p>Headings are also followed by supporting paragraphs.  Paragraphs are defined using the p block element.</p>
-<hr>
-	<h1>Bold Text with Strong</h1>
-	<p>Bold text places strong importance to it.  Strong inline level element is used to give strong importance to text.  &lt;b&gt; is used to stylistically offset text, for things that are not as important, but more for keywords.  Gauge the usage based on the significance of the contextual meaning of words.  If its actually important, defer to strong tag rather than b tag.</p>
-<hr>
-	<p></p>
-</section>
-<section>
-		<h1>How to mail</h1>
-	<p><a href="mailto:jsolk@uw.edu?subject=Hi&20there&body=What's%20up">send email</a>
-	<a href="mailto=jsolk@uw.edu?subject=hi&20there&body=How&20are&20you">email me</a>
-	<a href="http://www.google.com" target="_blank">googleme</a>
-	</p>	
-</section>
-<section>
-	<h1>Target attribute</h1>
-	<p>Target attribute is the ability to determine the location of where the link opens to when clicked.  Links may open to same window or new windows or section of same window.  To trigger the action of opening a link in a new windw, use the target="_blank".  To open in same frame as clicked the link page, which is the default: target="_self".  To open to the document of the parent frame, target="_parent".  To open to the full body of window, target="_top".  To open to named frame, target="framename"</p>
-</section>
-<section>
-	<h1>Relative and absolute paths</h1>
-	<p>
-		Relative paths are typically restricted to their own website, such as for other pages or sections within the same web page.  If the page in a different directory on the same site , then the relative path needs to corresponding to where it is in relation to the page of the link.
-	<img src="img/Penguins.jpg">
-	</p>
-	<p>Absolute path requires the full domain name with the path directories.  This is utiized in linking sites to other external sites.</p>
-</section>
-<section>
-	<h1>Linking to parts of the same page</h1>
-	<p>Hyperlinks can link to parts of same page.  On-page links are first initiated by setting an id attribute with element that is link destination.  Then reference the id with #idname in href field. Like so &lt;a href="#top"&gt;.  <a href="#top">top</a></p>
-</section>
-<section><h1>Building structure</h1>
-<h2>Header element</h2>
-<p>
-	Header element is used to identify the top of a page, article, section or other segment of a page.  Header element may include heading, introductory text, and even navigation.  Remember not to get <strong>Not</strong> to confuse header, head, and h1-h6 tags.  Head elements are usually not dispalyed on page and used to outline metadata like title, and links to other files.  h1-h6 elements are used to designate multiple level of text headings and hierarchy of structure within page.
-</p>
-<h2>Navigation element</h2>
-<p>Nav element identifies a section of major navigational links on page.  Nav element should be reserved for primary navigation sections such as global navigation like menus, table of contents, previous/next links.  Most commonly links include links to other parts of page or other pages in same website.  Single links should be avoided in nav elements</p>
-<h2>Article element</h2>
-<p>Article elements are used to identify section of independent, self-contained content that may be independently distributed or reused.  Often, they are used to mark up blog posts, newspaper articles , suer-submitted content.  The article element should be <strong>independent</strong> of rest of page and should be readily understood by itself, without confusion.</p>
-<h2>Section element</h2>
-<p>Section elements are used to identify thematic groupings of content, which generally include a heading.  The grouping of content wihtin section element may be generic in nature, but useful to identify all the content related.  Section element is commonly used to break up and provide hierarchy to a page.</p>
-<h2>Aside element</h2>
-<p>Aside element holds content such as sidebars, inserts, brief explanations that is tangentially related to content surrounding it.  e.g. identify other works by author of website.  Aside is a block level elements as such will appear on full line, occupying width of page or parent element.</p>
-<h2>Footer element</h2>
-<p>Footer element identifies closing or end of page, article, section or other segment of page.  Generally footer element is found at bottom of its parent.  Content within footer element should be relative information and should not diverge from the document or section it is included within.  </p>
-</section>
-<footer>
-	<small>&copy;James Inc. 2014</small>
-</footer>
+	<header>
+		<h1><a href="index.html">Styles Conference</a></h1>
+		<p>August 24-26th-Chicago,IL</p>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="speakers.html">Speakers</a>
+			<a href="schedule.html">Schedule</a>
+			<a href="venue.html">Venue</a>
+			<a href="register.html">Register</a>
+		</nav>
+	</header>
+	<section>
+		<section>
+			<!-- Register section -->
+			<p>Dedicated to Craft of Building Websites</p>
+			<p>Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest technologies. Join us this August!</p>
+		<a href="register.html">Register Now</a>
+		</section>
+		<section>
+		<!-- Speaker section -->
+			<a href="speaker.html">
+				<h5>Speakers</h5>
+				<h3>World-Class Speakers</h3>
+			</a>
+			<p>Joining us form all around the world are over twenty fantastic speakers, here to share their stories.</p>
+		</section>
+		<section>
+		<!-- Schedule section -->
+			<a href="schedule.html">
+				<h5>Schedule</h5>
+				<h3>Three Inspiring Days</h3>
+				<p>Enjoy three inspiring and action-packed days of talks, gatherings, and all-around good times.</p>
+			</a>
+		</section>
+		<section>
+		<!-- Venue section -->
+			<a href="venue.html">
+				<h5>Venue</h5>
+				<h3>The Chicago Theatre</h3>
+				<p>Within the heart of downtown Chicago, The Chicago Theatre will provide a beautiful conference venue.</p>
+			</a>
+		</section>
+	</section>
+	<footer>
+		&copy;Styles Conference
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="speakers.html">Speakers</a>
+			<a href="schedule.html">Schedule</a>
+			<a href="venue.html">Venue</a>
+			<a href="register.html">Register</a>
+		</nav>
+	</footer>
 </body>
 </html>
