@@ -78,5 +78,39 @@
 		</ol>
 	</p>
 </section>
+<hr>
+<section>
+	<h1>How to style with CSS</h1>
+	<p>
+		There are 3 ways to style:
+		<ul>
+			<li>external</li>
+			<li>internal</li>
+			<li>inline</li>
+		</ul>
+		<dl>
+			<dt>external styling</dt>
+				<dd>External styling is ideal when the style is applied to many pages.  With an external style sheet, one file controls the entire look of the website. 
+					<samp>
+						&lt;link rel="stylesheet" href="stylesheet.css"&gt;
+					</samp>
+				</dd>
+			<dt>internal styling</dt>
+				<dd>Internal styling is used when a single document has a unique style. Style is defined in the head section of an HTML page
+				<samp>&lt;style&gt; div{color:white;}&lt;/style&gt;</samp></dd>
+			<dt>inline stying</dt>
+				<dd>Inline styling loses many of the advantages of external style sheet, by mixing content with presentation.  To use inline styles, add the style attribute to the relavant tag.  Style attribute can contain any CSS property.  <samp>
+					&lt;p style="color:white;margin-left:20px"&gt;This is a style.&lt;/p&gt;
+				</samp></dd>
+		</dl>
+	</p>
+	<p>Styling occurs in the following precendence order from lowest to highest:
+	<ol>
+		<li>Browser default</li>
+		<li>External styling</li>
+		<li>Internal styling</li>
+		<li>Inline styling</li>
+	</ol></p>
+</section>
 </body>
 </html>
