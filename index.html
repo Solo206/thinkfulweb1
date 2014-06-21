@@ -158,6 +158,10 @@
 	</p>	
 </section>
 <section>
+	<h1>Target attribute</h1>
+	<p>Target attribute is the ability to determine the location of where the link opens to when clicked.  Links may open to same window or new windows or section of same window.  To trigger the action of opening a link in a new windw, use the target="_blank".  To open in same frame as clicked the link page, which is the default: target="_self".  To open to the document of the parent frame, target="_parent".  To open to the full body of window, target="_top".  To open to named frame, target="framename"</p>
+</section>
+<section>
 	<h1>Relative and absolute paths</h1>
 	<p>
 		Relative paths are typically restricted to their own website, such as for other pages or sections within the same web page.  If the page in a different directory on the same site , then the relative path needs to corresponding to where it is in relation to the page of the link.
@@ -168,6 +172,22 @@
 <section>
 	<h1>Linking to parts of the same page</h1>
 	<p>Hyperlinks can link to parts of same page.  On-page links are first initiated by setting an id attribute with element that is link destination.  Then reference the id with #idname in href field. Like so &lt;a href="#top"&gt;.  <a href="#top">top</a></p>
+</section>
+<section><h1>Building structure</h1>
+<h2>Header element</h2>
+<p>
+	Header element is used to identify the top of a page, article, section or other segment of a page.  Header element may include heading, introductory text, and even navigation.  Remember not to get <strong>Not</strong> to confuse header, head, and h1-h6 tags.  Head elements are usually not dispalyed on page and used to outline metadata like title, and links to other files.  h1-h6 elements are used to designate multiple level of text headings and hierarchy of structure within page.
+</p>
+<h2>Navigation element</h2>
+<p>Nav element identifies a section of major navigational links on page.  Nav element should be reserved for primary navigation sections such as global navigation like menus, table of contents, previous/next links.  Most commonly links include links to other parts of page or other pages in same website.  Single links should be avoided in nav elements</p>
+<h2>Article element</h2>
+<p>Article elements are used to identify section of independent, self-contained content that may be independently distributed or reused.  Often, they are used to mark up blog posts, newspaper articles , suer-submitted content.  The article element should be <strong>independent</strong> of rest of page and should be readily understood by itself, without confusion.</p>
+<h2>Section element</h2>
+<p>Section elements are used to identify thematic groupings of content, which generally include a heading.  The grouping of content wihtin section element may be generic in nature, but useful to identify all the content related.  Section element is commonly used to break up and provide hierarchy to a page.</p>
+<h2>Aside element</h2>
+<p>Aside element holds content such as sidebars, inserts, brief explanations that is tangentially related to content surrounding it.  e.g. identify other works by author of website.  Aside is a block level elements as such will appear on full line, occupying width of page or parent element.</p>
+<h2>Footer element</h2>
+<p>Footer element identifies closing or end of page, article, section or other segment of page.  Generally footer element is found at bottom of its parent.  Content within footer element should be relative information and should not diverge from the document or section it is included within.  </p>
 </section>
 <footer>
 	<small>&copy;James Inc. 2014</small>
